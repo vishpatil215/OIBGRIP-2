@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.start{
+height: 100vh;
+width: 100%;
+background-image: url('port.jpg');
+background-size: cover;
+}
+nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+    z-index: 1030;
+    background-color: rgb(39, 38, 38) ;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:#f9004d;
+    transition: .6s;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    
+}
+.content h1{
+    color: white;
+    margin: 20px,0px,20px;
+    font-size: 75px;
+
+}
+.content h3{
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+
+}
+.content h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.about{
+    background-color: #191919;
+    width: 100%;
+    padding: 100px 0px;
+
+}
+.about img{
+    height:500px;
+    width: 400px;
+
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.text{
+    width: 550px;
+}
+.text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.text h5{
+    color: white;
+   letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+
+
+}
+.text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 13px 30px;
+    font-weight: bold;
+    transition: .6s;
+
+}
+button:hover{
+    border: 2px solid #f9004d;
+    background-color: transparent;
+    cursor: pointer;
+}
+.service{
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-width: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p{
+    color:#fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 9px 22px;
+    font-weight: bold;
+    transition: .6s;
+}
+.card .button:hover{
+    border: 2px solid #f9004d;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.skill-bars{
+    padding: 25px 30px;
+    width: 600px;
+    background: #101010;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #f9004d;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 90%;
+  }
+  .bar .progress-line.css span{
+    width: 60%;
+  }
+  .bar .progress-line.jquery span{
+    width: 85%;
+  }
+  .bar .progress-line.python span{
+    width: 50%;
+  }
+  .bar .progress-line.mysql span{
+    width: 75%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "90%";
+  }
+  .progress-line.css span::after{
+    content: "60%";
+  }
+  .progress-line.jquery span::after{
+    content: "85%";
+  }
+  .progress-line.python span::after{
+    content: "50%";
+  }
+  .progress-line.mysql span::after{
+    content: "75%";
+  }
